@@ -1,2 +1,2 @@
 # hotpot-website
-corporate propaganda
+企业宣传
