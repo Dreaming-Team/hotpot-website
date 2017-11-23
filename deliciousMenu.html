@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>重庆火锅</title>
+  <meta http-equiv="Content-Type" content="text/html;  charset="UTF-8" />
+  <title>渝大帅火锅【官网】</title>
+  <meta name="keywords" content="{$seo_data['pc_keywords']}" />
+  <meta name="description" content="{$seo_data['pc_description']}" />
+  <meta charset="utf-8" />
   <style>
     a,hr{padding:0}a,button,input,select,textarea{margin:0}article,aside,details,figure,footer,header,hr,nav,section,summary{display:block}abbr,address,article,aside,audio,b,blockquote,body,body div,caption,cite,code,dd,del,details,dfn,dl,dt,em,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font-weight:400;vertical-align:baseline;background:0 0}input[type=checkbox],th{vertical-align:bottom}html{box-sizing:border-box;}*,:after,:before{box-sizing:inherit}embed,img,object{max-width:100%}ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}a{font-size:100%;vertical-align:baseline;background:0 0}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help}th{font-weight:700}td{font-weight:400;vertical-align:top}hr{height:1px;border:0;border-top:1px solid #ccc;margin:1em 0}input,select{vertical-align:middle}pre{white-space:pre;white-space:pre-wrap;white-space:pre-line;word-wrap:break-word}input[type=radio]{vertical-align:text-bottom}.ie7 input[type=checkbox]{vertical-align:baseline}.ie6 input{vertical-align:text-bottom}input,select,textarea{font:99% sans-serif}table{border-collapse:collapse;border-spacing:0;font:100%}small{font-size:85%}strong{font-weight:700}td,td img{vertical-align:top}sub,sup{font-size:75%;line-height:0;position:relative}sup{top:-.5em}sub{bottom:-.25em}code,kbd,pre,samp{font-family:monospace,sans-serif}.clickable,button,input[type=button],input[type=file],input[type=submit],label{cursor:pointer}button,input[type=button]{width:auto;overflow:visible}.ie7 img{-ms-interpolation-mode:bicubic}.clearfix:after{content:".";display:block;height:0;visibility:hidden;font-size:0;clear:both}*{-webkit-tap-highlight-color:transparent;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
   </style>
@@ -10,6 +13,7 @@
 
 <script src="js/jquery-1.7.1.min.js"></script>
 <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="js/jquery.lazyload.js"></script>
 <script src="js/index.js"></script>
 
 </head>
@@ -20,256 +24,258 @@
           <img  src="images/br1.png" alt="">
         </div>
         <a href="index.html"><span>首页</span></a>
-        <a href="1.html">美味菜单</a>
-        <a href="2.html">品牌故事</a>
-        <a href="3.html">店面展示</a>
-        <a href="4.html">新闻资讯</a>
-        <a href="5.html">加入我们</a>
+        <a href="deliciousMenu.html">美味菜单</a>
+        <a href="brandStory.html">品牌故事</a>
+        <a href="storeDisplay.html">店面展示</a>
+        <a href="news.html">新闻资讯</a>
+        <a href="joinUs.html">加入我们</a>
     </div>
   </div>
   <div class="bd">
     <img class="img" src="images/6.jpg" alt="">
     <div class="main">
       <div class="tip cl">
-          <div class="side-l">
+        <div class="side-l" id="side-l">
         <h1>火锅</h1>
         <ul>
-          <li class="tip1"><a href="">锅底</a></li>
-          <li class="tip2"><a href="">蔬菜</a></li> 
-          <li class="tip3"><a href="">肉类</a></li>
-          <li class="tip4"><a href="">鱼虾</a></li>
-          <li class="tip5"><a href="">酒水</a></li> 
-          <li class="tip6"><a href="">主食</a></li> 
+          <li class="tip1"><a href="javascript:;">锅底</a></li>
+          <li class="tip2"><a href="javascript:;">蔬菜</a></li>
+          <li class="tip3"><a href="javascript:;">肉类</a></li>
+          <li class="tip4"><a href="javascript:;">鱼虾</a></li>
+          <li class="tip5"><a href="javascript:;">酒水</a></li>
+          <li class="tip6"><a href="javascript:;">主食</a></li>
         </ul>
       </div>
-      <div class="side-r">
-        <div class="cp-1 cl" id="cp" style="display:none">
+      <div class="side-r" id="side-r">
+        <div class="cp-1 cl on" id="cp">
           <div class="p1">
-            <img src="images/tip1.jpg" alt="">
+            <img class="lazy" data-original="images/tip1.jpg" src="images/tip1.jpg" alt="">
             <p>菌汤+骨汤+牛油辣</p>
           </div>
           <div class="p1">
-            <img src="images/tip2.jpg" alt="">
+            <img class="lazy" data-original="images/tip2.jpg" src="images/tip2.jpg" alt="">
             <p>菌汤+骨汤+青椒辣</p>
           </div>
           <div class="p1">
-            <img src="images/tip3.jpg" alt="">
+            <img class="lazy" data-original="images/tip3.jpg" src="images/tip3.jpg" alt="">
             <p>菌汤+番茄+牛油辣</p>
           </div>
           <div class="p1">
-            <img src="images/tip4.jpg" alt="">
+            <img class="lazy" data-original="images/tip4.jpg" src="images/tip4.jpg" alt="">
             <p>菌汤+骨汤</p>
           </div>
           <div class="p1">
-            <img src="images/tip5.jpg" alt="">
+            <img class="lazy" data-original="images/tip5.jpg" src="images/tip5.jpg" alt="">
             <p>菌汤+番茄+牛油无渣</p>
           </div>
           <div class="p1">
-            <img src="images/tip6.jpg" alt="">
+            <img class="lazy" data-original="images/tip6.jpg" src="images/tip6.jpg" alt="">
             <p>菌汤+骨汤+青椒无渣</p>
           </div>
           <div class="p1">
-            <img src="images/tip7.jpg" alt="">
+            <img class="lazy" data-original="images/tip7.jpg" src="images/tip7.jpg" alt="">
             <p>菌汤+番茄+青椒辣</p>
           </div>
           <div class="p1">
-            <img src="images/tip8.jpg" alt="">
+            <img class="lazy" data-original="images/tip8.jpg" src="images/tip8.jpg" alt="">
             <p>四味火锅锅底</p>
           </div>
         </div>
-        <div class="cp-2 cl" style="display:none">
+        <div class="cp-2 cl" >
           <div class="cp">
-            <img src="images/cp1.jpg" alt="">
+            <img class="lazy" data-original="images/cp1.jpg" src="images/cp1.jpg" alt="">
             <p>冬瓜--火锅配菜</p>
-          </div> 
+          </div>
           <div class="cp">
-            <img src="images/cp2.jpg" alt="">
+            <img class="lazy" data-original="images/cp2.jpg" src="images/cp2.jpg" alt="">
             <p>海带--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp3.jpg" alt="">
+            <img class="lazy" data-original="images/cp3.jpg" src="images/cp3.jpg" alt="">
             <p>年糕--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp4.jpg" alt="">
+            <img class="lazy" data-original="images/cp4.jpg" src="images/cp4.jpg" alt="">
             <p>茼蒿--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp5.jpg" alt="">
+            <img class="lazy" data-original="images/cp5.jpg" src="images/cp5.jpg" alt="">
             <p>菠菜--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp6.jpg" alt="">
+            <img class="lazy" data-original="images/cp6.jpg" src="images/cp6.jpg" alt="">
             <p>土豆--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp7.jpg" alt="">
+            <img class="lazy" data-original="images/cp7.jpg" src="images/cp7.jpg" alt="">
             <p>竹笋条--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp8.jpg" alt="">
+            <img class="lazy" data-original="images/cp8.jpg" src="images/cp8.jpg" alt="">
             <p>菌类拼盘--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp9.jpg" alt="">
+            <img class="lazy" data-original="images/cp9.jpg" src="images/cp9.jpg" alt="">
             <p>金针菇--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp10.jpg" alt="">
+            <img class="lazy" data-original="images/cp10.jpg" src="images/cp10.jpg" alt="">
             <p>豆腐--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp11.jpg" alt="">
+            <img class="lazy" data-original="images/cp11.jpg" src="images/cp11.jpg" alt="">
             <p>平菇--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp12.jpg" alt="">
+            <img class="lazy" data-original="images/cp12.jpg" src="images/cp12.jpg" alt="">
             <p>生菜--火锅配菜</p>
           </div>
         </div>
-        <div class="cp-2 cl" style="display:none">
+        <div class="cp-2 cl" >
           <div class="cp">
-            <img src="images/cp13.jpg" alt="">
+            <img class="lazy" data-original="images/cp13.jpg" src="images/cp13.jpg" alt="">
             <p>羊羔卷--火锅配菜</p>
-          </div> 
+          </div>
           <div class="cp">
-            <img src="images/cp14.jpg" alt="">
+            <img class="lazy" data-original="images/cp14.jpg" src="images/cp14.jpg" alt="">
             <p>郡肝--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp15.jpg" alt="">
+            <img class="lazy" data-original="images/cp15.jpg" src="images/cp15.jpg" alt="">
             <p>雪花肥牛--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp16.jpg" alt="">
+            <img class="lazy" data-original="images/cp16.jpg" src="images/cp16.jpg" alt="">
             <p>鲜猪黄喉--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp17.jpg" alt="">
+            <img class="lazy" data-original="images/cp17.jpg" src="images/cp17.jpg" alt="">
             <p>脑花--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp18.jpg" alt="">
+            <img class="lazy" data-original="images/cp18.jpg" src="images/cp18.jpg" alt="">
             <p>鸭肠--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp19.jpg" alt="">
+            <img class="lazy" data-original="images/cp19.jpg" src="images/cp19.jpg" alt="">
             <p>嫩牛肉--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp20.jpg" alt="">
+            <img class="lazy" data-original="images/cp20.jpg" src="images/cp20.jpg" alt="">
             <p>牛肉--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp21.jpg" alt="">
+            <img class="lazy" data-original="images/cp21.jpg" src="images/cp21.jpg" alt="">
             <p>腰片--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp22.jpg" alt="">
+            <img class="lazy" data-original="images/cp22.jpg" src="images/cp22.jpg" alt="">
             <p>鸭血--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp23.jpg" alt="">
+            <img class="lazy" data-original="images/cp23.jpg" src="images/cp23.jpg" alt="">
             <p>鲜鹅肠--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp24.jpg" alt="">
+            <img class="lazy" data-original="images/cp24.jpg" src="images/cp24.jpg" alt="">
             <p>鲜鹅肠--火锅配菜</p>
           </div>
         </div>
-        <div class="cp-2 cl" style="display:none">
+        <div class="cp-2 cl">
           <div class="cp">
-            <img src="images/cp25.jpg" alt="">
+            <img class="lazy" data-original="images/cp25.jpg" src="images/cp25.jpg" alt="">
             <p>巴沙鱼--火锅配菜</p>
-          </div> 
+          </div>
           <div class="cp">
-            <img src="images/cp26.jpg" alt="">
+            <img class="lazy" data-original="images/cp26.jpg" src="images/cp26.jpg" alt="">
             <p>乌鱼片--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp27.jpg" alt="">
+            <img class="lazy" data-original="images/cp27.jpg" src="images/cp27.jpg" alt="">
             <p>虾饺--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp28.jpg" alt="">
+            <img class="lazy" data-original="images/cp28.jpg" src="images/cp28.jpg" alt="">
             <p>秘制虾滑--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp29.jpg" alt="">
+            <img class="lazy" data-original="images/cp29.jpg" src="images/cp29.jpg" alt="">
             <p>鱼滑--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp30.jpg" alt="">
+            <img class="lazy" data-original="images/cp30.jpg" src="images/cp30.jpg" alt="">
             <p>鱼丸--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp31.jpg" alt="">
+            <img class="lazy" data-original="images/cp31.jpg" src="images/cp31.jpg" alt="">
             <p>鲜虾--火锅配菜</p>
           </div>
           <div class="cp">
-            <img src="images/cp32.jpg" alt="">
+            <img class="lazy" data-original="images/cp32.jpg" src="images/cp32.jpg" alt="">
             <p>带鱼--火锅配菜</p>
           </div>
         </div>
-        <div class="cp-3" style="display:none">
-          <div class="cp-t">
-            <img src="images/js1.jpg" alt="">
-            <img src="images/js2.jpg" alt="">
-            <img src="images/js3.jpg" alt="">
+        <div class="cp-3">
+          <div class="cp-t" id="cp-t">
+            <img class="lazy " data-original="images/js1.jpg" src="images/js1.jpg" alt="">
+            <img class="lazy cp-t2" data-original="images/js2.jpg" src="images/js2.jpg" alt="">
+            <img class="lazy cp-t3" data-original="images/js3.jpg" src="images/js3.jpg" alt="">
           </div>
           <div class="cp-b">
-            <div class="slide cl">
-              <img src="images/yp1.jpg" alt="">
-              <img src="images/yp2.jpg" alt="">
-              <img src="images/yp3.jpg" alt="">
-              <img src="images/yp4.jpg" alt="">
-              <img src="images/yp5.jpg" alt="">
-              <img src="images/yp6.jpg" alt="">
-              <img src="images/yp7.jpg" alt="">
-              <img src="images/yp8.jpg" alt="">
+            <div class="slide">
+              <ul class="picList">
+                <li><img class="lazy" data-original="images/yp1.jpg" src="images/yp1.jpg" alt=""></li>
+                <li><img class="lazy" data-original="images/yp2.jpg" src="images/yp2.jpg" alt=""></li>
+                <li><img class="lazy" data-original="images/yp3.jpg" src="images/yp3.jpg" alt=""></li>
+                <li><img class="lazy" data-original="images/yp4.jpg" src="images/yp4.jpg" alt=""></li>
+                <li><img class="lazy" data-original="images/yp5.jpg" src="images/yp5.jpg" alt=""></li>
+                <li><img class="lazy" data-original="images/yp6.jpg" src="images/yp6.jpg" alt=""></li>
+                <li><img class="lazy" data-original="images/yp7.jpg" src="images/yp7.jpg" alt=""></li>
+                <li><img class="lazy" data-original="images/yp8.jpg" src="images/yp8.jpg" alt=""></li>
+              </ul>
             </div>
-          </div> 
+          </div>
         </div>
-        <div class="cp-4" >
+        <div class="cp-4">
           <div class="top">
             <h1>精选 <br>
                <span>美食</span>
             </h1>
-            <img src="images/z1.jpg" alt="">
-            <img src="images/z2.jpg" alt="">
-            <img src="images/z3.jpg" alt="">
-            <img src="images/z4.jpg" alt="">
+            <img class="lazy" data-original="images/z1.jpg" src="images/z1.jpg" alt="">
+            <img class="lazy" data-original="images/z2.jpg" src="images/z2.jpg" alt="">
+            <img class="lazy" data-original="images/z3.jpg" src="images/z3.jpg" alt="">
+            <img class="lazy" data-original="images/z4.jpg" src="images/z4.jpg" alt="">
           </div>
           <div class="center cl">
             <div class="c1">
               <span>煎包--主食</span>
-              <img src="images/zs1.jpg" alt="">
+              <img class="lazy" data-original="images/zs1.jpg" src="images/zs1.jpg" alt="">
             </div>
             <div class="c1">
               <span>稀饭--主食</span>
-              <img src="images/zs2.jpg" alt=""> 
+              <img class="lazy" data-original="images/zs2.jpg" src="images/zs2.jpg" alt="">
             </div>
             <div class="c1">
               <span>绿茶糕--主食</span>
-              <img src="images/zs3.jpg" alt="">
+              <img class="lazy" data-original="images/zs3.jpg" src="images/zs3.jpg" alt="">
             </div>
             <div class="c2">
               <span>蛋炒饭--主食</span>
-              <img src="images/zs4.jpg" alt="">              
+              <img class="lazy" data-original="images/zs4.jpg" src="images/zs4.jpg" alt="">
             </div>
             <div class="c2">
               <span>玉米--主食</span>
-              <img src="images/zs5.jpg" alt="">              
+              <img class="lazy" data-original="images/zs5.jpg" src="images/zs5.jpg" alt="">
             </div>
             <div class="c2">
               <span>蒸饺--主食</span>
-              <img src="images/zs6.jpg" alt="">              
+              <img class="lazy" data-original="images/zs6.jpg" src="images/zs6.jpg" alt="">
             </div>
           </div>
         </div>
       </div>
     </div>
-     
+
     </div>
     </div>
       <div class="ft main">
@@ -311,10 +317,33 @@
   </div>
   <script>
   $(function() {
-    $('#tip1').on('click','img',function(){
-      var w=$(this).width();
-
+    $('#side-l ul').on('click','li',function(){
+      var i=$(this).index();
+      console.log(i);
+      $('#side-r').children('div').removeClass('on');
+      $('#side-r').children('div').eq(i).addClass('on');
     })
+    $("img.lazy").lazyload({
+      effect : "fadeIn",
+      threshold : 5
+    });
+    $('#cp-t .cp-t3').hover(function() {
+      var l1=$(this).css('left');
+      var l2=$('.cp-t2').css('left');
+      if(l1==30+'px'&&l2==15+'px'){
+        $(this).css('left','930px');
+        $('#cp-t .cp-t2').hover(function() {
+          $(this).css('left','920px')},
+          function() {
+          $(this).css('left','15px');
+        })
+      }else if(l1==930+'px'&&l2==15+'px'){
+        $('.cp-t2').css('left','15px');
+         $(this).css('left','30px');
+      }
+      }
+    );
+    jQuery(".cp-b").slide({mainCell:".slide ul",autoPlay:true,effect:"leftMarquee",vis:5,interTime:50});
   });
 </script>
 </body>
